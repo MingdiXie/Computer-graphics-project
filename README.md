@@ -8,5 +8,6 @@ This project is based on assignment3 ray-tracing, perlin noise is implemented to
 > cd build-release
 > cmake ../ -DCMAKE_BUILD_TYPE=Release
 > make
+> ./raytracing
 > ```
 ![project img](project.png)
