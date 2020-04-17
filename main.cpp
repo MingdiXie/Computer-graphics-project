@@ -20,13 +20,13 @@ int main(int argc, char * argv[])
   std::vector< std::shared_ptr<Light> > lights;
   // Read a camera and scene description from given .json file
   read_json(
-    argc<=1?"../data/sphere-and-plane.json":argv[1],
+    argc<=1?"../data/creative.json":argv[1],
     camera,
     objects,
     lights);
 
-  int width =  640;
-  int height = 360;
+  int width =  1920;
+  int height = 1080;
   std::vector<unsigned char> rgb_image(3*width*height);
   // For each pixel (i,j)
   for(unsigned i=0; i<height; ++i) 

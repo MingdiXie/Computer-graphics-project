@@ -1,0 +1,122 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 1,
+    "eye": [0,0,200],
+    "up": [0,1,0],
+    "look": [0,0,-1],
+    "height": 1,
+    "width": 1.7777777778
+  },
+
+  "lights":[
+    {
+      "type": "point",
+      "color": [0.2,0.2,0.2],
+      "position": [-90,90,200]
+    },
+    {
+      "type": "point",
+      "color": [0.2,0.2,0.2],
+      "position": [90,90,200]
+    },
+    {
+      "type": "point",
+      "color": [0.2,0.2,0.2],
+      "position": [0,90,200]
+    },
+    {
+      "type": "point",
+      "color": [0.2,0.2,0.2],
+      "position": [0,-90,200]
+    }
+  ],
+
+  "materials": [
+    {
+      "name": "black ball",
+      "ka": [0.2,0.2,0.2],
+      "kd": [0.2,0.2,0.2],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 500
+    },
+    {
+      "name": "red metal",
+      "ka": [0.894118,0.101961,0.109804],
+      "kd": [0.894118,0.101961,0.109804],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 500
+    },
+    {
+      "name": "blue metal",
+      "ka": [0.215686,0.494118,0.721569],
+      "kd": [0.215686,0.494118,0.721569],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 500
+    },
+    {
+      "name": "black metal",
+      "ka": [0.2,0.2,0.2],
+      "kd": [0.2,0.2,0.2],
+      "ks": [0.2,0.2,0.2],
+      "km": [0.1,0.1,0.1],
+      "phong_exponent": 500
+    }
+  ],
+
+  "objects": [
+    {
+      "type": "sphere",
+      "material": "black ball",
+      "radius": 35,
+      "center": [0,-15,0]
+    },
+    {
+      "type": "sphere",
+      "material": "black ball",
+      "radius": 23,
+      "center": [-42.4,22.4,0]
+    },
+    {
+      "type": "sphere",
+      "material": "black ball",
+      "radius": 23,
+      "center": [42.4,22.4,0]
+    },
+
+    {
+      "type": "plane",
+      "material": "blue metal",
+      "point": [-100,0,0],
+      "normal": [1,0,0]
+    },
+    {
+      "type": "plane",
+      "material": "red metal",
+      "point": [0,0,-100],
+      "normal": [0,0,1]
+    },
+    {
+      "type": "plane",
+      "material": "black metal",
+      "point": [0,100,0],
+      "normal": [0,-1,0]
+    },
+    {
+      "type": "plane",
+      "material": "blue metal",
+      "point": [100,0,0],
+      "normal": [-1,0,0]
+    },
+    {
+      "material": "black metal",
+      "type": "plane",
+      "point": [0,-100,0],
+      "normal": [0,1,0]
+    }
+  ]
+}
+

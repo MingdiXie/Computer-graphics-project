@@ -1,4 +1,6 @@
 #include "first_hit.h"
+#include <iostream>
+#include <limits>
 
 bool first_hit(
   const Ray & ray, 
@@ -10,6 +12,21 @@ bool first_hit(
 {
   ////////////////////////////////////////////////////////////////////////////
   // Replace with your code here:
-  return false;
+  bool start = false;
+  double tempT;
+  Eigen::Vector3d tempN;
+  t = std::numeric_limits<int>::max();
+  for(int i=0;i<objects.size();i++){
+    if(objects[i]->intersect(ray, min_t, tempT, tempN)){
+      if(tempT < t && tempT > 0){
+        t = tempT;
+        n = tempN;
+        hit_id = i;
+        start = true;
+      }
+    }
+  }
+  return start;
   ////////////////////////////////////////////////////////////////////////////
 }
+
