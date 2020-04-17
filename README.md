@@ -1,5 +1,5 @@
 # Computer Graphics project
-![project img](project.ppm)
+![project img](project.png)
 > **How to use:** 
 > ```
 > mkdir build-release
