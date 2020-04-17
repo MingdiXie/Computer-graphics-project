@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.glsl": "cpp",
+        "core": "cpp",
+        "sparsecore": "cpp",
+        "superlusupport": "cpp",
+        "adolcforward": "cpp",
+        "alignedvector3": "cpp",
+        "autodiff": "cpp",
+        "bvh": "cpp",
+        "fft": "cpp",
+        "kroneckerproduct": "cpp",
+        "mprealsupport": "cpp",
+        "numericaldiff": "cpp",
+        "openglsupport": "cpp",
+        "splines": "cpp",
+        "valarray": "cpp"
+    }
+}
