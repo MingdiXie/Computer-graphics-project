@@ -10,4 +10,4 @@ This project is based on assignment3 ray-tracing, perlin noise is implemented to
 > make
 > ./raytracing
 > ```
-![project img](project.png)
+![project img](image.png)
