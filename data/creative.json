@@ -71,20 +71,20 @@
     {
       "type": "sphere",
       "material": "black ball",
-      "radius": 35,
-      "center": [0,-15,0]
+      "radius": 33,
+      "center": [0,9,0]
     },
     {
       "type": "sphere",
       "material": "black ball",
-      "radius": 23,
-      "center": [-42.4,22.4,0]
+      "radius": 18,
+      "center": [-39,42,0]
     },
     {
       "type": "sphere",
       "material": "black ball",
-      "radius": 23,
-      "center": [42.4,22.4,0]
+      "radius": 18,
+      "center": [39,42,0]
     },
 
     {
@@ -116,6 +116,40 @@
       "type": "plane",
       "point": [0,-100,0],
       "normal": [0,1,0]
+    },
+    {
+      "type": "box",
+      "material": "black ball",
+      "lb": [-15, -60, -15],
+      "rt":[15, -30, 15]
+    },
+    {
+      "type": "cylinder",
+      "material": "black ball",
+      "p1": [30, -30, 0],
+      "p0": [30,-50, 0],
+      "radius": 8
+    },
+    {
+      "type": "cylinder",
+      "material": "black ball",
+      "p1": [-30, -30, 0],
+      "p0": [-30,-50, 0],
+      "radius": 8
+    },
+    {
+      "type": "cylinder",
+      "material": "black ball",
+      "p1": [-10, -70, 0],
+      "p0": [-10,-85, 0],
+      "radius": 8
+    },
+    {
+      "type": "cylinder",
+      "material": "black ball",
+      "p1": [10, -70, 0],
+      "p0": [10,-85, 0],
+      "radius": 8
     }
   ]
 }

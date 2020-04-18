@@ -143,15 +143,7 @@ Eigen::Vector3d blinn_phong_shading(
 
     if (hit == false || l_max_t > max_t)
     {
-      if (hit_id == 0)
-      {
-        if (sphere_noise > 0.1)
-        {
-          kd = Eigen::Vector3d(0.68, 1, 0.18);
-        }
-      }
-
-      else if (hit_id == 4)
+      if (hit_id == 4)
       {
         if (background_noise > 0.1)
         {
@@ -163,7 +155,7 @@ Eigen::Vector3d blinn_phong_shading(
         }
       }
 
-      else if (hit_id == 1 || hit_id == 2)
+      else if (hit_id == 1 || hit_id == 2 || hit_id == 10 || hit_id == 9)
       {
         if (sphere_noise > 0.1)
         {
@@ -192,6 +184,13 @@ Eigen::Vector3d blinn_phong_shading(
         if ((table_noise > 0) && (table_noise < 0.05))
         {
           kd = Eigen::Vector3d(1.0, 0.78, 0.93);
+        }
+      }
+      else
+      {
+        if (sphere_noise > 0.1)
+        {
+          kd = Eigen::Vector3d(0.68, 1, 0.18);
         }
       }
       Eigen::Vector3d diffuse = fmax(0, n.dot(d)) * (I.array() * kd.array()).matrix();

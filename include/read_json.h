@@ -31,8 +31,10 @@ inline bool read_json(
 #include "Object.h"
 #include "Sphere.h"
 #include "Plane.h"
+#include "Cylinder.h"
 #include "Triangle.h"
 #include "TriangleSoup.h"
+#include "Box.h"
 #include "Light.h"
 #include "PointLight.h"
 #include "DirectionalLight.h"
@@ -136,7 +138,23 @@ inline bool read_json(
         sphere->center = parse_Vector3d(jobj["center"]);
         sphere->radius = jobj["radius"].get<double>();
         objects.push_back(sphere);
-      }else if(jobj["type"] == "plane")
+      }
+      else if (jobj["type"] == "box")
+      {
+      std::shared_ptr<Box> box(new Box());
+      box->lb = parse_Vector3d(jobj["lb"]);
+      box->rt = parse_Vector3d(jobj["rt"]);
+      objects.push_back(box); 
+      }
+      else if (jobj["type"] == "cylinder")
+	  {
+		  std::shared_ptr<Cylinder> cylinder(new Cylinder());
+		  cylinder->p1 = parse_Vector3d(jobj["p1"]);
+		  cylinder->p0 = parse_Vector3d(jobj["p0"]);
+		  cylinder->radius = jobj["radius"].get<double>();
+		  objects.push_back(cylinder);
+	  }
+      else if(jobj["type"] == "plane")
       {
         std::shared_ptr<Plane> plane(new Plane());
         plane->point = parse_Vector3d(jobj["point"]);

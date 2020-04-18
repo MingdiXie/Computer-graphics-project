@@ -19,9 +19,11 @@ endif()
 file(GLOB SRCFILES "${SRC_DIR}/*.cpp")
 set(HW2FILES 
   "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/Plane.cpp"
+  "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/Box.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/Sphere.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/Triangle.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/TriangleSoup.cpp"
+  "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/Cylinder.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/first_hit.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/viewing_ray.cpp"
   "${CMAKE_CURRENT_SOURCE_DIR}/${SRC_DIR}/write_ppm.cpp")
